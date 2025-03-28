@@ -10,7 +10,7 @@ namespace BraunRoland_Bank
     {
         double balance;
 
-        public double Balance { get => balance; }
+        public virtual double Balance { get; protected set; }
 
         protected BankAccount(Owner owner) : base(owner)
         {
