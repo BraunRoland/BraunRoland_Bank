@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace BraunRoland_Bank
 {
-    sealed class Owner
+    internal sealed class Owner
         {
-        string name;
+        public string Name { get; set;}
+        
 
         public Owner(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
 
-        public string Name { get => name; set => name = value; }
     }
 }
