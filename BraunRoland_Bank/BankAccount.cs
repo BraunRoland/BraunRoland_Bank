@@ -22,5 +22,10 @@ namespace BraunRoland_Bank
         }
 
         public abstract bool Withdraw(double amount);
+
+        public BankCard NewCard(string cardNumber)
+        {
+            return new BankCard(this.Owner, this.Balance, cardNumber);
+        }
     }
 }
